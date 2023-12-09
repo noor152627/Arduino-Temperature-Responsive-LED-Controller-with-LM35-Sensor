@@ -16,7 +16,7 @@ void loop() {
   int sensorValue = analogRead(lm35Pin);
   
   // Convert the analog sensor value to temperature in Celsius
-  float temperatureC = (sensorValue * 0.0048828125) * 10.0;
+  float temperatureC = (sensorValue * 0.0048828125) * 100.0;
 
   // Print temperature for debugging (optional)
   Serial.print("Temperature: ");
